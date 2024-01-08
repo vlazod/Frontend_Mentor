@@ -1,0 +1,123 @@
+:root{
+    --yellow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 50%);
+    --black: hsl(0, 0%, 7%)
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: var(--yellow);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Figtree";
+}
+.card{
+    background: var(--white);
+    padding: 30px;
+    border: 2px solid var(--black);
+    border-radius: 25px;
+    max-width: 540px;
+    width: 100%;
+    box-shadow: 10px 10px 0 var(--black);
+    margin-bottom: 20px;
+}
+.card__img{
+    width: 100%;
+    margin-bottom: 30px;
+    background: url(assets/images/illustration-article.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+    border-radius: 25px;
+}
+.card__img img{
+    width: 100%;
+    border-radius: 25px;
+}
+.card__content{
+    display: flex;
+    flex-direction: column;
+}
+.card__content--button{
+    display: block;
+    padding: 8px;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: var(--yellow);
+    width: 110px;
+    text-align: center;
+    font-size: 18px;
+    font-family: "Figtree ExtraBold";
+    color: var(--black);
+    margin-bottom: 20px;
+}
+.card__content--date{
+    font-size: 20px;
+    font-family: "Figtree SemiBold";
+    color: var(--grey);
+    margin-bottom: 20px;
+}
+.card__content--title{
+    font-family: "Figtree ExtraBold";
+    margin-bottom: 16px;
+}
+.card__content--title a{
+    text-decoration: none;
+    color: var(--black);
+    transition: color .1s ease-in;
+}
+.card__content--title a:hover{
+    color: var(--yellow);
+}
+.card__content--description{
+    font-size: 22px;
+    font-family: "Figtree SemiBold";
+    color: var(--grey);
+    margin-bottom: 33px;
+}
+.author{
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+.author__img{
+    width: 40px;
+    margin-right: 15px;
+}
+.author__name{
+    font-family: "Figtree ExtraBold";
+    font-size: 18px;
+}
+
+@media (min-width: 375px){
+    body{
+        padding: 0 35px;
+    }
+    .card__img{
+        background-size: cover;
+        background-position: center center;
+    }
+    .card__content--title{
+        font-size: 24px;
+    }
+    .card__content--description{
+        font-size: 16px;
+    }
+}
+@media (min-width:640px) and (max-width: 1440px){
+    .card__content--title{
+        font-size: 28px;
+    }
+    .card__content--description{
+        font-size: 22px;
+    }
+}
