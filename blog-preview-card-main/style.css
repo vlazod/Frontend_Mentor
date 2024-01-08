@@ -56,18 +56,18 @@ html{
     width: 110px;
     text-align: center;
     font-size: 18px;
-    font-family: "Figtree ExtraBold";
+    /* font-family: "Figtree ExtraBold"; */
     color: var(--black);
     margin-bottom: 20px;
 }
 .card__content--date{
     font-size: 20px;
-    font-family: "Figtree SemiBold";
+    /* font-family: "Figtree SemiBold"; */
     color: var(--grey);
     margin-bottom: 20px;
 }
 .card__content--title{
-    font-family: "Figtree ExtraBold";
+    /* font-family: "Figtree ExtraBold"; */
     margin-bottom: 16px;
 }
 .card__content--title a{
@@ -80,7 +80,7 @@ html{
 }
 .card__content--description{
     font-size: 22px;
-    font-family: "Figtree SemiBold";
+    /* font-family: "Figtree SemiBold"; */
     color: var(--grey);
     margin-bottom: 33px;
 }
