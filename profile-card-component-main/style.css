@@ -24,7 +24,7 @@ html::before{
     display: block;
     position: absolute;
     top: -450px;
-    left: -70px;
+    left: -300px;
     background: url(images/bg-pattern-top.svg);
     width: 978px;
     height: 978px;
@@ -34,8 +34,8 @@ html::after{
     content: '';
     display: block;
     position: absolute;
-    bottom: -500px;
-    right: -70px;
+    bottom: -520px;
+    right: -300px;
     background: url(images/bg-pattern-bottom.svg);
     width: 978px;
     height: 978px;
