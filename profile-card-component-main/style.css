@@ -1,0 +1,116 @@
+:root{
+    --dark_cyan: hsl(185, 75%, 39%);
+    --very_dark_desaturated_blue: hsl(229, 23%, 23%);
+    --dark_grayish_blue: hsl(227, 10%, 46%);
+    --dark_gray: hsl(0, 0%, 59%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    width: 100%;
+    height: 100vh;
+    background: var(--dark_cyan);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Kumbh Sans";
+}
+html::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: -450px;
+    left: -70px;
+    background: url(images/bg-pattern-top.svg);
+    width: 978px;
+    height: 978px;
+}
+
+html::after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -500px;
+    right: -70px;
+    background: url(images/bg-pattern-bottom.svg);
+    width: 978px;
+    height: 978px;
+}
+.card{
+    position: relative;
+    z-index: 10;
+    width: 380px;
+    height: 405px;
+    background: #fff;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+.card_pattern{
+    background: url(images/bg-pattern-card.svg);
+    height: 145px;
+    position: relative;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card_pattern img{
+    border-radius: 50%;
+    border: 5px solid #fff;
+    position: absolute;
+    top: 65%;
+}
+.card__data{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    height: 160px;
+    border-bottom: 1px solid #dddddd;
+}
+.card__data--name{
+    margin-top: 45px;
+    font-size: 18px;
+    color: var(--dark_grayish_blue);
+}
+.card__data--name strong{
+    color: #000;
+}
+.card__data--location{
+    color: var(--dark_grayish_blue);
+    font-size: 15px;
+}
+.card_statistics{
+    display: flex;
+    padding: 12px;
+    padding-right: 15px;
+    padding-left: 15px;
+    height: 75px;
+}
+.card__statistics--followers,
+.card__statistics--likes,
+.card__statistics--photos{
+    flex: 1;
+    display: flex;
+    height: 75px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.number{
+    font-size: 18px;
+    font-weight: 800;
+}
+.number + p{
+    font-size: 11px;
+    margin-top: 8px;
+    color: var(--dark_grayish_blue);
+    letter-spacing: 1.5px;
+}
