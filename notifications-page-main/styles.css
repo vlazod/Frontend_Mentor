@@ -162,7 +162,7 @@ input[type=checkbox]{
 @media (min-width: 375px) and (max-width: 639px){
 
     .main{
-        width: 90%;
+        width: 80%;
     }
     .toggle{
         width: 5px;
@@ -183,6 +183,6 @@ input[type=checkbox]{
 }
 @media (min-width: 640px) and (max-width: 1440px){
     .main{
-        width: 70%;
+        width: 60%;
     }
 }
