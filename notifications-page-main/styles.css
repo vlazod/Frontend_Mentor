@@ -1,0 +1,188 @@
+:root{
+    --red: hsl(1, 90%, 64%);
+    --blue: hsl(219, 85%, 26%);
+    --white: hsl(0, 0%, 100%);
+    --very_light_grayish_blue: hsl(210, 60%, 98%);
+    --light_grayish_blue_1: hsl(211, 68%, 94%);
+    --light_grayish_blue_2: hsl(205, 33%, 90%);
+    --grayish_blue: hsl(219, 14%, 63%);
+    --dark_grayish_blue: hsl(219, 12%, 42%);
+    --very_dark_blue: hsl(224, 21%, 14%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--very_light_grayish_blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    font-family: "Plus Jakarta Sans";
+}
+.main{
+    width: 670px;
+    background: var(--white);
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.info__header{
+    display: flex;
+    margin: 20px 0;
+}
+.info__header--notifications, .info__header--markall{
+    display: flex;
+    flex: 1;
+}
+.info__header--notifications p{
+    font-size: 22px;
+}
+.info__header--markall{
+    justify-content: flex-end;
+    margin-right: 5px;
+}
+.info__header--markall a{
+    text-decoration: none;
+    font-size: 15px;
+    color: var(--grayish_blue);
+}
+.unread{
+    background: var(--very_light_grayish_blue);
+}
+.notification{
+    padding: 10px;
+    padding-left: 25px;
+    display: flex;
+    border-radius: 10px;
+    margin-bottom: 6px;
+}
+.notification__profile{
+    width: 45px;
+    display: flex;
+    align-items: flex-start;
+    margin-right: 10px;
+}
+.notifications_number{
+    margin: 0 8px;
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 3px;
+    height: 25px;
+    width: 30px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+.notification__profile img{
+    width: 45px;
+}
+.notification__info{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.notification__info--message{
+    border: 1px solid var(--light_grayish_blue_2);
+    border-radius: 5px;
+    color: var(--dark_grayish_blue);
+    margin-top: 15px;
+    padding: 15px;
+}
+.notification__info--message:hover{
+    background: var(--light_grayish_blue_1);
+}
+.notification__photo{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: flex-end;
+}
+.notification__photo img{
+    display: block;
+    width: 40px;
+}
+.notification__info--action .user__name a{
+    text-decoration: none;
+    color: var(--very_dark_grayish_blue);
+}
+.notification__info--action{
+    display: flex;
+}
+.notification__info--action .user__post a{
+    text-decoration: none;
+    color: var(--dark_grayish_blue);
+}
+.user__name a:hover{
+    color: var(--blue);
+    transition: color .1s ease-in;
+}
+.notification__info--time{
+    color: var(--grayish_blue); 
+}
+.toggle{
+    width: 10px;
+    height: 10px;
+    padding: 3px;
+    /* border: 1px solid var(--light_grayish_blue_1); */
+    background: var(--red);
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 5px;
+    margin-top: 6px;
+}
+.toggle__read{
+    width: 10px;
+    height: 10px;
+    border: 1px solid var(--dark_grayish_blue);
+    background: none;
+    margin-left: 5px;
+    margin-top: 6px;
+    display: inline-block;
+    border-radius: 50% !important;
+}
+input[type=checkbox]{
+    display: none;
+}
+.new_window{
+    color: var(--blue) !important;
+}
+
+/*MEDIA QUERIES*/
+@media (min-width: 375px) and (max-width: 639px){
+
+    .main{
+        width: 90%;
+    }
+    .toggle{
+        width: 5px;
+        height: 5px;
+        padding: 5px;
+        margin-top: 10px;
+        display: inline-block;
+    }
+    .toggle__read{
+        width: 5px;
+        height: 5px;
+        padding: 4px;
+        display: inline-block;
+    }
+    .notification__info p{
+        font-size: 15px;
+    }
+}
+@media (min-width: 640px) and (max-width: 1440px){
+    .main{
+        width: 70%;
+    }
+}
