@@ -1,0 +1,109 @@
+:root{
+    --white: hsl(0, 0%, 100%);
+    --light_pink: hsl(275, 100%, 97%);
+    --grayish_purple: hsl(292, 16%, 49%);
+    --dark_purple: hsl(292, 42%, 14%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: "Work Sans", sans-serif;
+}
+body{
+    background: var(--light_pink);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+body::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 323px;
+    background: url(./assets/images/background-pattern-desktop.svg) no-repeat top/cover;
+    z-index: -1;
+}
+.accordion{
+    width: 600px;
+    background: var(--white);
+    padding: 30px;
+    padding-bottom: 15px;
+    border-radius: 15px;
+    margin-top: 40px;
+}
+.accordion__header{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.accordion__header--title{
+    font-size: 58px;
+    font-weight: 700;
+    font-family: "Work Sans", sans-serif;
+}
+.accordion__item--button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    width: 100%;
+    border: none;
+    background: transparent;
+    
+}
+.accordion__item{
+    overflow: hidden;
+    height: 65px;
+    transition: all .1s ease-in;
+    /* border-bottom: 1px solid #dddddd; */
+    margin-top: 13px;
+}
+.accordion__item:not(:last-child){
+    border-bottom: 1px solid #dddddd;
+}
+.accordion__item.active{
+    height: 200px
+}
+.accordion__item--button p{
+    font-size: 1.07rem;
+    font-family: "Work Sans", sans-serif;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-align: initial;
+}
+.accordion__item--button[aria-expanded="false"]::after{
+    content: url(./assets/images/icon-plus.svg);
+}
+.accordion__item--button[aria-expanded="true"]::after{
+    content: url(./assets/images/icon-minus.svg);
+}
+
+.accordion__item--content{
+    padding: 20px 0;
+    line-height: 30px;
+    color: var(--grayish_purple);
+    font-weight: 500;
+}
+/* .accordion__item.expanded{
+    
+    height: 120px;
+} */
+@media (min-width: 375px) and (max-width: 800px){
+    
+    body{
+        padding: 10px;
+    }
+    .accordion{
+        width: 80%;
+    }
+    .accordion__item.active{
+        height: 330px
+    }
+
+}
