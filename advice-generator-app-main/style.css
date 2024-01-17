@@ -1,0 +1,80 @@
+:root{
+    --light_cyan: hsl(193, 38%, 86%);
+    --neon_green: hsl(150, 100%, 66%);
+    --grayish_blue: hsl(217, 19%, 38%);
+    --dark_grayish_blue: hsl(217, 19%, 24%);
+    --dark_blue: hsl(218, 23%, 16%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: var(--dark_blue);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.advice{
+    margin: 10px;
+    padding: 30px;
+    background: var(--dark_grayish_blue);
+    width: 540px;
+    border-radius: 13px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Manrope";
+    position: relative;
+}
+.advice__number{
+    color: var(--neon_green);
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+.advice__text{
+    font-size: 30px;
+    font-weight: 800;
+    color: var(--light_cyan);
+    text-align: center;
+}
+.advice__text::after{
+    content: url(./images/pattern-divider-desktop.svg);
+    display: block;
+    margin-bottom: 40px;
+    margin-top: 15px;
+}
+.advice__button{
+    width: 65px;
+    height: 65px;
+    border: none;
+    border-radius: 50px;
+    background: url(./images/icon-dice.svg) no-repeat center center var(--neon_green);
+    cursor: pointer;
+    position: absolute;
+    bottom: -30px;
+    transition: all .1s ease-out;
+}
+.advice__button:hover{
+    box-shadow: 0px 0px 40px var(--neon_green);
+}
+@media (min-width: 375px) and (max-width: 640px){
+    .advice{
+
+        width: 90%;
+
+    }
+    .advice__text::after{
+        content: url(./images/pattern-divider-mobile.svg);
+        /* display: block;
+        margin-bottom: 40px;
+        margin-top: 15px; */
+    }
+}
