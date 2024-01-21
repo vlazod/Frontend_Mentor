@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&family=Roboto:wght@400;700&family=Rubik:wght@400;500;700&family=Young+Serif&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&family=Outfit:wght@400;600;700&family=Roboto:wght@400;700&family=Rubik:wght@400;500;700&family=Young+Serif&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">  
+  
+  <title>Frontend Mentor | Recipe page</title>
+
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <img src="./assets/images/image-omelette.jpeg" alt="delicious omelette image" class="recipe__image mobile">
+  <main class="container">
+    <img src="./assets/images/image-omelette.jpeg" alt="delicious omelette image" class="recipe__image desktop">
+    <section class="recipe">
+      <h1 class="recipe__title">
+        Simple Omelette Recipe
+      </h1>
+      
+      <p class="recipe__description">
+        An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
+        to perfection, optionally filled with your choice of cheese, vegetables, or meats.
+      </p>
+    
+      <section class="recipe__preparation">
+        <h3>Preparation time</h3>
+        <ul>
+          <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Total:</strong> Approximately 10 minutes</li>
+          <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Preparation:</strong> 5 minutes</li>
+          <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Cooking:</strong> 5 minutes</li>
+        </ul>
+      </section>
+      
+      <section class="recipe__ingredients">
+        <h2>Ingredients</h2>
+        <ul>
+          <li>&nbsp;&nbsp;&nbsp;&nbsp;2-3 large eggs</li>
+          <li>&nbsp;&nbsp;&nbsp;&nbsp;Salt, to taste</li>
+          <li>&nbsp;&nbsp;&nbsp;&nbsp;Pepper, to taste</li>
+          <li>&nbsp;&nbsp;&nbsp;&nbsp;1 tablespoon of butter or oil</li>
+          <li>&nbsp;&nbsp;&nbsp;&nbsp;Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+        </ul>
+      </section>
+
+      <section class="recipe__instructions">
+        <h2>Instructions</h2>
+        <ul>
+          <li>
+            <article class="instruction">
+              <div class="instruction__number">
+                <strong>1.</strong>
+              </div>
+              <div class="instruction__instruction">
+                <strong>Beat the eggs:</strong> 
+                In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
+                You can add a tablespoon of water or milk for a fluffier texture.
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="instruction">
+              <div class="instruction__number">
+                <strong>2.</strong>
+              </div>
+              <div class="instruction__instruction">
+                <strong>Heat the pan:</strong> 
+                Place a non-stick frying pan over medium heat and add butter or oil.
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="instruction">
+              <div class="instruction__number">
+                <strong>3.</strong>
+              </div>
+              <div class="instruction__instruction">
+                <strong>Cook the omelette:</strong> 
+                Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
+                the eggs evenly coat the surface.
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="instruction">
+              <div class="instruction__number">
+                <strong>4.</strong>
+              </div>
+              <div class="instruction__instruction">
+                <strong>Add fillings (optional):</strong> 
+                When the eggs begin to set at the edges but are still slightly runny in the 
+                middle, sprinkle your chosen fillings over one half of the omelette.
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="instruction">
+              <div class="instruction__number">
+                <strong>5.</strong>
+              </div>
+              <div class="instruction__instruction">
+                <strong>Fold and serve:</strong> 
+                As the omelette continues to cook, carefully lift one edge and fold it over the 
+                fillings. Let it cook for another minute, then slide it onto a plate.
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="instruction">
+              <div class="instruction__number">
+                <strong>6.</strong>
+              </div>
+              <div class="instruction__instruction">
+                <strong>Enjoy:</strong> 
+                Serve hot, with additional salt and pepper if needed.
+              </div>
+            </article>
+          </li>
+        </ul>
+      </section>
+
+      <section class="recipe__nutrition">
+        <h2>Nutrition</h2>
+        <p>The table below shows nutritional values per serving without the additional fillings.</p>
+        <table>
+          <tbody>
+            <tr>
+              <td>Calories</td>
+              <td><strong>277kcal</strong></td>
+            </tr>
+            <tr>
+              <td>Carbs</td>
+              <td><strong>0g</strong></td>
+            </tr>
+            <tr>
+              <td>Protein</td>
+              <td><strong>20g</strong></td>
+            </tr>
+            <tr>
+              <td>Fat</td>
+              <td><strong>22g</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      
+      </section>
+    
+  </main>
+
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Victor Lazo Dominguez</a>.
+  </div>
+</body>
+</html>
