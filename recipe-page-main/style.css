@@ -15,21 +15,22 @@
 }
 body{
     background: var(--eggshell);
-    min-height: 100vh;
     display: flex;
     justify-content: start;
     align-items: center;
     flex-direction: column;
+    max-width: 1440px;
+    margin: auto;
+    padding: 50px;
 
 }
 .container{
     padding: 25px 28px;
     background: var(--white);
     border-radius: 20px;
-    margin-top: 30px;
     margin-bottom: 10px;
-    margin-top: 80px;
-    width: 580px;
+    /* margin-top: 80px; */
+    width: 610px;
     padding-bottom: 0;
 }
 .recipe{
@@ -157,7 +158,7 @@ td + td{
     color: var(--dark_raspberry);
 }
 
-@media (min-width: 360px) and (max-width: 720px){
+@media (min-width: 260px) and (max-width: 720px){
     body{
         background: var(--eggshell);
         min-height: 100vh;
@@ -165,6 +166,7 @@ td + td{
         justify-content: start;
         align-items: center;
         flex-direction: column;
+        padding: 0;
     
     }
     .recipe__title{
